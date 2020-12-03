@@ -1,0 +1,3 @@
+
+rootProject.name = 'solace-flume-channel'
+include('lib')
