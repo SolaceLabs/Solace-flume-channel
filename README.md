@@ -74,7 +74,7 @@ Simply copy the solace-flume-channel.jar file into your Apache Flmue runtime lib
 
 To learn more about configuring Flume, click [here](https://flume.apache.org/FlumeUserGuide.html#configuration "here").
 
-A sample Flume configuration file is found in the config directory of the Solace-flume-channel source tree, called sequenceToLogsThroughSolace.conf. This sample file is setup to use the Sequence Generator source, the Solace channel (with required configuration) and the logger sink.
+A sample Flume configuration file is found in the config directory of the Solace-flume-channel source tree, called sequenceToLogsThroughSolace.conf. This sample file is setup to use the Sequence Generator source, the Solace channel (with required configuration) and the logger sink. Copy this file to the conf subdirectory below your Flume runtime and edit the file to point to your Solace broker/vpn. 
 
 | Parameter name  | Value  | Description   |
 | ------------ | ------------ | ------------ |
@@ -101,6 +101,14 @@ Here are two ways to quickly get started if you don't already have a PubSub+ ins
     * Visit https://solace.com/downloads/
     * A variety of download options are available to run the software locally
     * Follow the instructions for whatever download option you choose
+
+### Configure Your Broker 
+
+By default, the "default" client username on the Solace broker's "default" VPN has no password provided. This sample supplies a password, which is also "default". Edit the default client username on the broker to provide password. Alternatively, you can supply a different VPN, a different client username and a different password. 
+
+For more details on configuring client usernames, see https://docs.solace.com/Configuring-and-Managing/Configuring-Client-Usernames.htm
+
+For more details on configuring VPNs, see https://docs.solace.com/Configuring-and-Managing/Configuring-VPNs.htm
 
 ### Run a Sample
 
