@@ -34,7 +34,7 @@ Inside the Solace channel, the message is converted from a Flume event into a So
 
 In this sample, the source and sink are both run in the context of the same local Flume instance. If your use case requires the sink and source be located on different servers or even spread across geographical regions, you would use an instance of Flume at each location, and implement one end of the stream on each, as show in the diagram below:
 
-![Moving Events](images/Synopsis split.png "Moving Events")
+![Moving Events](images/Synopsissplit.png "Moving Events")
 
 ## Design
 
@@ -43,7 +43,7 @@ The design of the Solace Flume channel is quite simple, implementing a channel a
 put(Event flumeEvent)
 Event take()
 
-![Class Model](images/class model.png "Class Model")
+![Class Model](images/classmodel.png "Class Model")
 
 In the following sequence diagram, we can observe the interaction between the components and classes comprising this solution:
 
