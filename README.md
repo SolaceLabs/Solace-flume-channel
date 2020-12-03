@@ -126,7 +126,7 @@ Check the logs directory of your Flume installation and see the file "flume.log"
 	Line 7814: 02 Dec 2020 13:38:25,215 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.LoggerSink.process:94)  - Event: { headers:{} body: 36 31                                           61 }
 	
 
-If you increase the logging level to DEBUG level, you will also see many messages from tghe Solace channel as it moves the Events through the flow:
+If you increase the logging level to DEBUG level, you will also see many messages from the Solace channel as it moves the Events through the flow:
 
 	02 Dec 2020 13:38:25,224 INFO  [PollableSourceRunner-SequenceGeneratorSource-SeqSource] (com.solace.flume.channel.SolaceChannel.put:86)  - Event has been put
 	
