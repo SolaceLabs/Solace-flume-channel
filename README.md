@@ -86,6 +86,9 @@ A sample Flume configuration file is found in the config directory of the Solace
 | Password  | default  | The Solace client username to connect with  |
 | QueueName  | flumeQ  | The name of the Solace queue to create and use for sending a receiving messages  |
 
+For more details on configuring client usernames, see https://docs.solace.com/Configuring-and-Managing/Configuring-Client-Usernames.htm
+
+For more details on configuring VPNs, see https://docs.solace.com/Configuring-and-Managing/Configuring-VPNs.htm
 
 ## Sample Walkthrough
 
@@ -106,9 +109,7 @@ Here are two ways to quickly get started if you don't already have a PubSub+ ins
 
 By default, the "default" client username on the Solace broker's "default" VPN has no password provided. This sample supplies a password, which is also "default". Edit the default client username on the broker to provide password. Alternatively, you can supply a different VPN, a different client username and a different password. 
 
-For more details on configuring client usernames, see https://docs.solace.com/Configuring-and-Managing/Configuring-Client-Usernames.htm
-
-For more details on configuring VPNs, see https://docs.solace.com/Configuring-and-Managing/Configuring-VPNs.htm
+Edit your Flume configuration file as described above to describe your broker, VPN and client username credentials to be used.
 
 ### Run a Sample
 
