@@ -201,9 +201,16 @@ public class SolaceSession {
       {
     	  if (m_producer == null) 
     	  {
-    		  throw new JCSMPException("The queue is not bound to. Call bindToQueue() before publishToQueue()");
+    		  LOG.warn ("The queue is not bound to. Call bindToQueue() before publishToQueue()");
     	  }
-    	  flumeEventAsASolaceMessage.setDeliveryMode(DeliveryMode.PERSISTENT);
-    	  m_producer.send(flumeEventAsASolaceMessage, m_queue);
+		  else {
+			  flumeEventAsASolaceMessage.setDeliveryMode(DeliveryMode.PERSISTENT);
+			  try {
+				m_producer.send(flumeEventAsASolaceMessage, m_queue);
+			  }
+			  catch (JCSMPException ex) {
+				  LOG.warn ("unable to send message");
+			  }
+		  }
       }
 }
