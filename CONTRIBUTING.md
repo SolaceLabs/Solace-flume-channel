@@ -32,7 +32,7 @@ Fork the project [on GitHub](https://github.com/SolaceLabs/Solace-flume-channel)
 locally.
 
 ```sh
-git clone https://github.com/<my-github-repo>/solace-apache-beam
+git clone https://github.com/<my-github-repo>/Solace-flume-channel
 ```
 
 #### Step 2: Branch
@@ -96,7 +96,7 @@ git push origin my-fix-branch
 
 #### Step 6: Pull Request
 
-In GitHub, send a pull request to `solace-apache-beam:master`. 
+In GitHub, send a pull request to `SolaceLabs/Solace-flume-channel:master`. 
 
 When fixing an existing issue, use the [commit message keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) to close the associated GitHub issue.
 
